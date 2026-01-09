@@ -1,2 +1,3 @@
 # bryant-tran-mars
-portfolio project for Intro to Programming course with Code the Dream
+Portfolio project for Intro to Programming course with Code the Dream
+Bryant Tran
