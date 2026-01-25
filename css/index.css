@@ -43,9 +43,44 @@ a:hover {
     color: #1d3566;
 }
 
-#Connect li, #Connect ul, #Connect {
+#Connect {
     text-align: center;
+}
+
+#Connect ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#Connect li {
+    margin: 0;
+}
+
+#Connect a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #2a4d8f;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#Connect a:hover {
+    background-color: #1d3566;
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 #Experience ul {
@@ -71,4 +106,36 @@ a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     min-width: 120px;
 
+}
+
+/* Section 9 Experience Section */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-item {
+    border-left: 4px solid #2a4d8f;
+    padding-left: 20px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.job-date {
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+.job-description {
+    margin: 10px 0 0 0;
+    color: #555;
+    line-height: 1.6;
 }
