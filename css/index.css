@@ -139,3 +139,92 @@ a:hover {
     color: #555;
     line-height: 1.6;
 }
+
+/* ====== Media Query Section ====== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #1f3b72;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: #0f213f;
+    }
+
+    #Connect ul {
+        gap: 28px;
+        padding: 8px 16px;
+        background-color: rgba(42,77,143,0.05);
+        border-radius: 10px;
+    }
+
+    #Connect a {
+        padding: 10px 20px;
+        font-size: 1.05rem;
+    }
+
+    .experience-container {
+        gap: 24px;
+    }
+
+    .experience-item {
+        padding-left: 24px;
+        border-left-width: 5px;
+        background-color: #fbfbfb;
+        border-radius: 8px;
+    }   
+
+    .job-date {
+        color: #444;
+        font-size: 0.95rem;
+    }
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 900;
+        color: #162d56;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        color: #0a1a2e;
+    }
+
+    #Connect ul {
+        gap: 32px;
+        padding: 12px 24px;
+        background-color: rgba(42,77,143,0.1);
+        border-radius: 12px;
+    }
+
+    #Connect a {
+        padding: 14px 28px;
+        font-size: 1.1rem;
+    }
+
+    .experience-container {
+        gap: 28px;
+    }
+
+    .experience-item {
+        padding-left: 28px;
+        border-left-width: 6px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+    }   
+
+    .job-date {
+        color: #222;
+        font-size: 1rem;
+    }
+}
+}
+
+/* Redoing for lesson 10 */
