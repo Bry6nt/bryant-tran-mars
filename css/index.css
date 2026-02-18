@@ -1,4 +1,5 @@
 
+
 body {
     background-color: #333333;
     color: #6b6a72;
@@ -196,5 +197,107 @@ a:hover {
         padding: 16px 24px;
         background-color: #2a4d8f;
         font-weight: 600;
+    }
+}
+
+/* ============================
+   Message Form Styles
+   ============================ */
+#LeaveMessage form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#LeaveMessage label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #2a4d8f;
+}
+
+#LeaveMessage input[type="text"],
+#LeaveMessage input[type="email"],
+#LeaveMessage textarea {
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    color: #222;
+    transition: border-color 0.2s;
+}
+
+#LeaveMessage input[type="text"]:focus,
+#LeaveMessage input[type="email"]:focus,
+#LeaveMessage textarea:focus {
+    border-color: #2a4d8f;
+    outline: none;
+}
+
+#LeaveMessage textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+#LeaveMessage button[type="submit"] {
+    padding: 14px 0;
+    background-color: #2a4d8f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s, transform 0.1s;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(42,77,143,0.08);
+}
+
+#LeaveMessage button[type="submit"]:hover,
+#LeaveMessage button[type="submit"]:focus {
+    background-color: #1d3566;
+    transform: translateY(-2px);
+}
+
+/* Remove button in messages list */
+#messages button {
+    margin-left: 12px;
+    padding: 8px 16px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+#messages button:hover,
+#messages button:focus {
+    background: #c0392b;
+    transform: translateY(-1px);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+    #LeaveMessage form {
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+    #LeaveMessage input[type="text"],
+    #LeaveMessage input[type="email"],
+    #LeaveMessage textarea {
+        font-size: 1.08rem;
+        padding: 16px 12px;
+    }
+    #LeaveMessage button[type="submit"] {
+        font-size: 1.15rem;
+        padding: 18px 0;
     }
 }
