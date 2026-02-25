@@ -116,3 +116,32 @@ messageForm.addEventListener('submit', function(event) {
     messageForm.reset();
 });
 
+// Fetch GitHub repos for user 'Bry6nt'
+fetch('https://api.github.com/users/Bry6nt/repos')
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        const repositories = data;
+        console.log(repositories);
+
+        // Select the Projects section and its <ul>
+        const projectSection = document.getElementById('Projects');
+        const projectList = projectSection.querySelector('ul');
+
+        // Clear any existing content
+        projectList.innerHTML = '';
+
+        // Loop through repositories and add to list
+        for (let i = 0; i < repositories.length; i++) {
+            const project = document.createElement('li');
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(function(error) {
+        console.error('Error fetching repositories:', error);
+        alert('Could not load GitHub repositories. If your Projects section is empty, there may be a problem with the server or your connection.');
+    });
+
+    
